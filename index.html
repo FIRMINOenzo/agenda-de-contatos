@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <span class="card-title">Agenda de Contatos</span>
+                        <br>
+                        <div class="grey-text">* - Campos Obrigatórios</div>
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s6">   
+                                    <input type="text" name="nome" id="nome">
+                                    <label for="nome">Nome*</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input type="text" name="sobrenome" id="sobrenome">
+                                    <label for="sobrenome">Sobrenome</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input type="text" name="apelido" id="apelido">
+                                    <label for="apelido">Apelido</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input type="text" name="telefone" id="telefone">
+                                    <label for="telefone">Telefone*</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input type="email" name="email" id="email">
+                                    <label for="email">E-mail</label>
+                                </div>
+                                <input type="submit" value="Adicionar contato" class="btn green darken-2">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <h5 id="task-title">Contatos</h5>
+                    <div class="input-field col s12">
+                        <input type="text" name="buscador" id="buscador">
+                        <label for="buscador">Buscar contato</label>
+                    </div>
+                    <ul class="collection"></ul>
+                    <a href="#" class="apagar-contatos btn red darken-2">Limpar Contatos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/1278951f00.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
