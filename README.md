@@ -1,7 +1,7 @@
 # agenda-de-contatos
 Agenda de contatos construída com HTML, CSS e JS
 
-###### Treinando conhecimentos sobre JS, tais como:
+### Treinando conhecimentos sobre JS, tais como:
  * manipulação do DOM;
  * funções;
  * delegação de eventos;
